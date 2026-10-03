@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17171c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="한자퀘스트">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+<title>한자퀘스트</title>
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <button class="iconbtn" id="backBtn" aria-label="뒤로">‹</button>
+    <div class="brand">漢字<span>QUEST</span></div>
+    <button class="iconbtn" id="soundBtn" aria-label="소리">♪</button>
+  </header>
+
+  <main id="screen"></main>
+
+  <nav class="nav">
+    <button data-screen="home" class="active"><b>⌂</b><span>홈</span></button>
+    <button data-screen="study"><b>漢</b><span>학습</span></button>
+    <button data-screen="battle"><b>⚔</b><span>퀴즈</span></button>
+    <button data-screen="collection"><b>▦</b><span>도감</span></button>
+  </nav>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
